@@ -16,23 +16,13 @@
     <![endif]-->
 
 </head>
-<body>
-	<div class="do-it">
-		<aside class="menu">
-			<svg>
-				
-			</svg>
-			<ul>
-				<li>item1</li>
-				<li>item2</li>
-				<li>item3</li>
-				<li>item4</li>
-			</ul>
-		</aside>
-		<main class="schedules">
-			
-		</main>
-	</div>
+<body ng-app = "doItApp">
+		<header>
+			<h1 class="main-header">
+				Do-It
+			</h1>
+		</header>
+		<ng-view></ng-view>
 	<script type="text/javascript" src="scripts/vendor.js"></script>
 	<script type="text/javascript" src="scripts/main.min.js"></script>
 </body>

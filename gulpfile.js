@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     connect = require('gulp-connect'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    ngAnnotate = require('gulp-ng-annotate');
 
 // Styles
 gulp.task('styles', function() {
@@ -28,6 +29,7 @@ gulp.task('styles', function() {
 // Scripts
 gulp.task('scripts', function() {
   return gulp.src('app/src/scripts/**/*.js')
+    .pipe(ngAnnotate())
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
@@ -40,11 +42,12 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scriptVendors', function() {
-  	return gulp.src(['bower_components/angular/angular.min.js','bower_components/angular-route.min.js'])
+  	return gulp.src(['bower_components/angular/angular.js','bower_components/angular-route/angular-route.js'])
+      .pipe(ngAnnotate())
 	    .pipe(concat('vendor.js'))
 	    .pipe(uglify())
 	    .pipe(gulp.dest('app/dist/scripts'))
-	    .pipe(connect.reload()); 
+	    .pipe(connect.reload());
 });
 gulp.task('styleVendors', function() {
 	return gulp.src(['bower_components/normalize-css/normalize.css'])
