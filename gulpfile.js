@@ -79,6 +79,13 @@ gulp.task('html', function(){
    .pipe(connect.reload())
 });
 
+//Fonts
+gulp.task('font', function(){
+   gulp.src('app/src/fonts/*.*')
+   .pipe(gulp.dest('app/dist'))
+   .pipe(connect.reload())
+});
+
 //Connect
 gulp.task('connect', function(){
    connect.server({
@@ -89,7 +96,7 @@ gulp.task('connect', function(){
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts','scriptVendors','styleVendors','html','connect','watch');
+    gulp.start('styles', 'scripts','scriptVendors','styleVendors','html','font','connect','watch');
 });
 
 // Watch

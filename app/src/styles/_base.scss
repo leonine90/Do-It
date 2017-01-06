@@ -1,0 +1,41 @@
+body{
+  background-color: $mainColor;
+}
+
+.navbar{
+  background-color:$menuBackgroundColor;
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: -2em;
+  width: 58%;
+  a{
+    color: $mainColor;
+    font-family: $secondFont;
+    text-decoration: none;
+  }
+  li{
+    display: list-item;
+    flex-grow: 1;
+    list-style-type: none;
+    text-align: center;
+  }
+  ul{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+}
+.main-header{
+  color:$textColor;
+  font-family: $firstFont;
+  font-size: 20em;
+  font-weight: lighter;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
