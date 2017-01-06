@@ -1,33 +1,48 @@
 body{
   background-color: $mainColor;
 }
-
+.container{
+  margin: 0 auto;
+  width: 58%;
+}
 .navbar{
-  background-color:$menuBackgroundColor;
   font-size: 2em;
   margin: 0 auto;
-  margin-top: -2em;
-  width: 58%;
-  a{
-    color: $mainColor;
-    font-family: $secondFont;
-    text-decoration: none;
-  }
+  transform: translateY(-2.2em);
   li{
-    display: list-item;
-    flex-grow: 1;
-    list-style-type: none;
     text-align: center;
+    a{
+      background-color:$navbarBackgroundColor;
+      color: $mainColor;
+      display: block;
+      font-family: $secondFont;
+      padding: 10px 0;
+      text-decoration: none;
+      width: 100%;
+      &:hover{
+        color: $textColor;
+        background-color: $selectedColor;
+      }
+    }
   }
   ul{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 60px;
-    justify-content: space-between;
+    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  @media screen and (min-width:30em){
+    ul{
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    li{
+      flex: 1 0 auto;
+    }
   }
 }
 .main-header{
