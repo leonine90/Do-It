@@ -82,7 +82,7 @@ gulp.task('html', function(){
 //Fonts
 gulp.task('font', function(){
    gulp.src('app/src/fonts/*.*')
-   .pipe(gulp.dest('app/dist'))
+   .pipe(gulp.dest('app/dist/fonts'))
    .pipe(connect.reload())
 });
 
