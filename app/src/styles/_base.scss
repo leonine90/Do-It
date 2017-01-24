@@ -64,7 +64,7 @@ ul{
   text-align: center;
 }
 
-.menu{
+.main-menu{
   background-color: $menuBackgroundColor;
   font-size: 5em;
   height: 100%;
@@ -72,6 +72,7 @@ ul{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
   ul{
     align-items: center;
     display: flex;
@@ -109,6 +110,19 @@ ul{
   bottom: 0;
   right:0px;
   position: fixed;
+}
+
+.close-button{
+  position: fixed;
+  right:20px;
+  stroke: $mainColor;
+  stroke-width: 3px;
+  top: 20px;
+  transition: all 0.7s ease;
+  &:hover{
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
 }
 
 .visible{
