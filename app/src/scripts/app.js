@@ -2,12 +2,18 @@
 
 angular.module('doItApp',['ngRoute'])
 .config(function($routeProvider){
-	$routeProvider.
-		when('/',{
-        templateUrl: 'views/main.html'
+	$routeProvider
+		.when('/daily',{
+        templateUrl: 'views/daily.html'
       })
+		.when('/weekly',{
+        templateUrl: 'views/weekly.html'
+      })
+		.when('/monthly',{
+				templateUrl: 'views/monthly.html'
+			})
 		.otherwise({
-			redirectTo:'/'
+			redirectTo:'/daily'
 		});
 
 });
