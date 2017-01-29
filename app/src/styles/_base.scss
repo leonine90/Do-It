@@ -57,11 +57,19 @@ ul{
 .main-header{
   color:$textColor;
   font-family: $firstFont;
-  font-size: 20em;
+  font-size: 10em;
   font-weight: lighter;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   margin-top: 0;
   text-align: center;
+  @media screen and (min-width: 40em){
+    font-size: 15em;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 60em){
+    font-size: 20em;
+    margin-bottom: 5px;
+  }
 }
 
 .main-menu{
@@ -110,10 +118,21 @@ ul{
 .icon{
   cursor: pointer;
   fill:$iconColor;
+  stroke: $mainColor;
+  stroke-width: 5px;
+  &:hover{
+    fill:$selectedColor;
+    stroke: $textColor;
+  }
 }
 .menu-icon{
   bottom: 0;
-  right:0px;
+  right:0;
+  position: fixed;
+}
+.add-icon{
+  bottom: 90px;
+  right:0;
   position: fixed;
 }
 

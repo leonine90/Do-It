@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('doItApp')
-.directive('showIcon',function(){
+.directive('addIcon',function(){
   return{
     restrict:'E',
     replace: 'true',
-    templateUrl: '/views/directives/show-icon.html',
+    templateUrl: '/views/directives/add-icon.html',
     controller: function($scope){
       $scope.showMenu = false;
     }
