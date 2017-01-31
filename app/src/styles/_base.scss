@@ -14,6 +14,18 @@ ul{
 .container{
   margin: 0 auto;
   width: 58%;
+  @media screen and (max-width: 40em){
+    width: 95%;
+  }
+  @media screen and (max-width: 60em){
+    width: 68%;
+  }
+}
+.solid-bar{
+  background-color: $textColor;
+  height: 56px;
+  transform: translateY(-3.8em);
+  width: 100%;
 }
 .navbar{
   font-size: 2em;
@@ -127,13 +139,33 @@ ul{
 }
 .menu-icon{
   bottom: 0;
-  right:0;
+  right:100px;
   position: fixed;
+  svg{
+    height: 100px;
+    width: 100px;
+  }
+  @media screen and (max-width: 40em){
+    right:25px;
+  }
+  @media screen and (max-width: 60em){
+    right:10px;
+  }
 }
 .add-icon{
   bottom: 90px;
-  right:0;
+  right:100px;
   position: fixed;
+  svg{
+    height: 100px;
+    width: 100px;
+  }
+  @media screen and (max-width: 40em){
+    right:25px;
+  }
+  @media screen and (max-width: 60em){
+    right:10px;
+  }
 }
 
 .close-button{
@@ -142,12 +174,13 @@ ul{
   stroke: $mainColor;
   stroke-width: 3px;
   top: 20px;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease;
   svg{
     height: 100px;
     width: 100px;
   }
   &:hover{
+    stroke: $mainColor;
     transform: rotate(90deg);
     transform-origin: center;
   }

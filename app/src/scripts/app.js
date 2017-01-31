@@ -12,6 +12,12 @@ angular.module('doItApp',['ngRoute'])
 		.when('/monthly',{
 				templateUrl: 'views/monthly.html'
 			})
+		.when('/aboutUs',{
+				templateUrl: 'views/aboutUs.html'
+			})
+		.when('/aboutProject',{
+				templateUrl: 'views/aboutProject.html'
+			})
 		.otherwise({
 			redirectTo:'/daily'
 		});
