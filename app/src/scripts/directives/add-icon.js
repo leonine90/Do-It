@@ -8,6 +8,7 @@ angular.module('doItApp')
     templateUrl: '/views/directives/add-icon.html',
     controller: function($scope){
       $scope.showAddTask = false;
+      $scope.hideIcon = false;
     }
   };
 });

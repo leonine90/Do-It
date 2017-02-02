@@ -5,9 +5,6 @@ angular.module('doItApp')
   return{
     restrict:'E',
     replace: 'true',
-    templateUrl: '/views/directives/menu-icon.html',
-    controller: function($scope){
-      $scope.showMenu = false;
-    }
+    templateUrl: '/views/directives/menu-icon.html'
   };
 });

@@ -5,6 +5,10 @@ angular.module('doItApp')
   return{
     restrict:'E',
     replace: 'true',
-    templateUrl: '/views/directives/main-menu.html'
+    templateUrl: '/views/directives/main-menu.html',
+    controller: function($scope){
+      $scope.showMenu = false;
+      $scope.backgroundColor= '#809ab5';
+    }
   };
 });

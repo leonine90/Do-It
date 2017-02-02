@@ -1,5 +1,10 @@
 body{
   background-color: $mainColor;
+  font-family: $firstFont;
+  min-height: 276px;
+}
+h1{
+  font-size: 4em;
 }
 ul{
   list-style-type: none;
@@ -68,7 +73,6 @@ ul{
 
 .main-header{
   color:$textColor;
-  font-family: $firstFont;
   font-size: 10em;
   font-weight: lighter;
   margin-bottom: 40px;
@@ -110,7 +114,6 @@ ul{
     a{
       color:$mainColor;
       display: block;
-      font-family: $firstFont;
       padding-bottom: 2rem;
       padding-top: 2rem;
       &:hover{
@@ -124,6 +127,13 @@ ul{
   }
   @media screen and (max-width:35em){
     font-size: 3.5em;
+  }
+}
+.about{
+  h1{
+    color: $secondTextColor;
+    margin:0;
+    text-align: center;
   }
 }
 
