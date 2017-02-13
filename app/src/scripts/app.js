@@ -9,5 +9,5 @@ angular.module('doItApp',['ui.router'])
 			.state("monthly" ,{parent:"home", url:"/monthly", templateUrl:"views/templates/monthly.html"})
 		.state("aboutUs" ,{url:'/aboutUs', templateUrl:"views/templates/aboutUs.html"})
 		.state("aboutProject",{url:"/aboutProject", templateUrl:"views/templates/aboutProject.html"});
-	$urlRouterProvider.otherwise("/home");	
+	$urlRouterProvider.otherwise("/home");
 });

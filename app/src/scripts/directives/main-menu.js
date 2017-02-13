@@ -8,7 +8,6 @@ angular.module('doItApp')
     templateUrl: '/views/directives/main-menu.html',
     controller: function($scope){
       $scope.showMenu = false;
-      $scope.backgroundColor= '#809ab5';
     }
   };
 });
