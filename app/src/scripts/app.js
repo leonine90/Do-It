@@ -1,25 +1,12 @@
 'use strict';
 
-angular.module('doItApp',['ngRoute'])
-.config(function($routeProvider){
-	$routeProvider
-		.when('/daily',{
-        templateUrl: 'views/daily.html'
-      })
-		.when('/weekly',{
-        templateUrl: 'views/weekly.html'
-      })
-		.when('/monthly',{
-				templateUrl: 'views/monthly.html'
-			})
-		.when('/aboutUs',{
-				templateUrl: 'views/aboutUs.html'
-			})
-		.when('/aboutProject',{
-				templateUrl: 'views/aboutProject.html'
-			})
-		.otherwise({
-			redirectTo:'/daily'
-		});
-
+angular.module('doItApp',['ui.router'])
+.config(function($stateProvider){
+	$stateProvider
+		.state("home" ,{url:"/", templateUrl:"views/templates/home.html"})
+			.state("daily" ,{url:"/daily", templateUrl:"views/templates/daily.html"})
+			.state("weekly" ,{url:"/weekly", templateUrl:"views/templates/weekly.html"})
+			.state("monthly" ,{url:"/monthly", templateUrl:"views/templates/monthly.html"})
+		.state("aboutUs" ,{url:'/aboutUs', templateUrl:"views/templates/aboutUs.html"})
+		.state("aboutProject",{url:"/aboutProject", templateUrl:"views/templates/aboutProject.html"});
 });

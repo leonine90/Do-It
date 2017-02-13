@@ -1,0 +1,27 @@
+{
+  "name": "do-it",
+  "description": "Persian to-do list app",
+  "main": "",
+  "authors": [
+    "Leonine90 <leonine90@gmail.com> (https://github.com/leonine90)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "to-do",
+    "schedule"
+  ],
+  "homepage": "https://github.com/leonine90/Do-It",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.4.2",
+    "angular": "^1.6.0",
+    "jquery": "^3.1.1",
+    "normalize-css": "normalize.css#^5.0.0"
+  }
+}

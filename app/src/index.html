@@ -18,15 +18,11 @@
 </head>
 <body ng-app = "doItApp" ng-style="{'background-color':backgroundColor}">
 		<header>
-			<h1 class="main-header">
+			<h1 class="main-header"><a href="#!/daily" ng-click = 'backgroundColor="#809ab5"'>
 				Do-It
-			</h1>
+			</a></h1>
 		</header>
-		<add-task></add-task>
-		<main-menu></main-menu>
-		<ng-view></ng-view>
-		<add-icon class="add-icon"></add-icon>
-		<menu-icon class="menu-icon"></menu-icon>
+		<ui-view></ui-view>
 	<script type="text/javascript" src="scripts/vendor.js"></script>
 	<script type="text/javascript" src="scripts/main.min.js"></script>
 </body>

@@ -6,15 +6,13 @@ body{
 h1{
   font-size: 4em;
 }
+a{
+  text-decoration: none;
+}
 ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
-  li{
-    a{
-      text-decoration: none;
-    }
-  }
 }
 .container{
   margin: 0 auto;
@@ -36,6 +34,12 @@ ul{
   font-size: 2em;
   margin: 0 auto;
   transform: translateY(-2.2em);
+  ul{
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+  }
   li{
     text-align: center;
     a{
@@ -50,12 +54,6 @@ ul{
         background-color: $selectedColor;
       }
     }
-  }
-  ul{
-    margin: 0;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-top: 10px;
   }
   @media screen and (min-width:30em){
     ul{
@@ -72,12 +70,15 @@ ul{
 }
 
 .main-header{
-  color:$textColor;
   font-size: 10em;
   font-weight: lighter;
   margin-bottom: 40px;
   margin-top: 0;
   text-align: center;
+  a{
+    color:$textColor;
+    text-decoration: none;
+  }
   @media screen and (min-width: 40em){
     font-size: 15em;
     margin-bottom: 15px;
@@ -195,7 +196,10 @@ ul{
     transform-origin: center;
   }
 }
-
+.active{
+  background-color: $selectedColor;
+  color: $textColor;
+}
 .visible{
   opacity: 1;
   visibility: visible;
