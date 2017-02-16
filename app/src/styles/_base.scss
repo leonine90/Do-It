@@ -94,6 +94,7 @@ ul{
   display: flex;
   flex-direction: column;
   font-size: 5em;
+  justify-content: center;
   height: 100%;
   left: 0;
   position: fixed;
@@ -180,6 +181,7 @@ ul{
 }
 
 .close-button{
+  height: 100px;
   position: fixed;
   right:20px;
   stroke: $mainColor;
@@ -196,18 +198,39 @@ ul{
     transform-origin: center;
   }
 }
+
+.new-task{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: flex-start;
+  div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 85%;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  input, textarea{
+    font-size: 50%;
+    padding: 2%;
+  }
+  .submit-btn{
+    align-self: flex-end;
+  }
+}
+
 .active{
   a{
   background-color: $selectedColor;
   color: $textColor;
   }
 }
-.bg1{
-  background-color:$mainColor;
-}
-.bg2{
-  background-color: $selectedColor;
-}
+
 .visible{
   opacity: 1;
   visibility: visible;
