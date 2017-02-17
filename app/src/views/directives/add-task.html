@@ -9,16 +9,25 @@
   </div>
 
   <form class="new-task" ng-submit>
-    <div>
-      <input type="text"/>
-      <input type="text"/>
-      <input type="text"/>
-      <input type="text"/>
-      <input type="text"/>
+    <div class="form-section">
+      <ul class="radio-section">
+        <li>
+          <label><input type="radio" name="taskCategory" value="1"/>Daily</label>
+        </li>
+        <li>
+          <label><input type="radio" name="taskCategory" value="2"/>Weekly</label>
+        </li>
+        <li>
+          <label><input type="radio" name="taskCategory" value="3"/>Monthly</label>
+        </li>
+      </ul>
+      <input type="text" placeholder="What you wanna do?"/>
+      <input type="text" placeholder="Category"/>
+      <input type="datetime" placeholder="Date"/>
       <input class="submit-btn" type="submit"/>
     </div>
     <div class="new-task-preview">
-
+        <h1>Preview</h1>
     </div>
   </form>
 </section>
