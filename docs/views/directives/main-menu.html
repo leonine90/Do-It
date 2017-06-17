@@ -1,0 +1,15 @@
+<section class="main-menu" ng-show='showMenu'>
+  <div class="close-button icon" ng-click = 'showMenu = !showMenu'>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <line x1="0" y1="0" x2="100" y2="100"/>
+            <line x1="100" y1="0" x2="0" y2="100"/>
+          </g>
+    </svg>
+  </div>
+  <ul>
+    <li><a ui-sref="home" ng-click = 'showMenu = !showMenu; hideIcon=false;'>Do-It</a></li>
+    <li><a ui-sref="aboutUs" ng-click = 'showMenu = !showMenu; hideIcon=true;'>About Us</a></li>
+    <li><a ui-sref="aboutProject" ng-click = 'showMenu = !showMenu; hideIcon=true;'>About This Project</a></li>
+  </ul>
+</section>

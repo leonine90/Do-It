@@ -1,0 +1,279 @@
+/*Fonts*/
+@font-face {
+  font-family: bodoniMT;
+  src: url("../fonts/bodoni.ttf") format("truetype"); }
+@font-face {
+  font-family: futuraL;
+  src: url("../fonts/futuraL.ttf") format("truetype"); }
+/* Colors */
+/* ------------------------ */
+body {
+  background-color: #809ab5;
+  font-family: bodoniMT;
+  min-height: 276px; }
+
+h1 {
+  font-size: 4em; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 58%; }
+  @media screen and (max-width: 40em) {
+    .container {
+      width: 95%; } }
+  @media screen and (max-width: 60em) {
+    .container {
+      width: 68%; } }
+
+.solid-bar {
+  background-color: #1b1818;
+  height: 56px;
+  transform: translateY(-3.8em);
+  width: 100%; }
+
+.navbar {
+  font-size: 2em;
+  margin: 0 auto;
+  transform: translateY(-2.2em); }
+  .navbar ul {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-top: 10px; }
+  .navbar li {
+    text-align: center; }
+    .navbar li a {
+      background-color: #011e33;
+      color: #809ab5;
+      display: block;
+      font-family: futuraL;
+      padding: 10px 0;
+      width: 100%; }
+      .navbar li a:hover {
+        background-color: #d4648c;
+        color: #1b1818; }
+  @media screen and (min-width: 30em) {
+    .navbar ul {
+      -ms-flex-align: center;
+          align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+    .navbar li {
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; } }
+
+.main-header {
+  font-size: 10em;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center; }
+  .main-header a {
+    color: #1b1818;
+    text-decoration: none; }
+  @media screen and (min-width: 40em) {
+    .main-header {
+      font-size: 15em;
+      margin-bottom: 15px; } }
+  @media screen and (min-width: 60em) {
+    .main-header {
+      font-size: 20em;
+      margin-bottom: 5px; } }
+
+.main-menu {
+  background-color: #01346b;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 4em;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  .main-menu ul {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%; }
+  .main-menu li {
+    text-align: center;
+    width: 100%; }
+    .main-menu li a {
+      color: #809ab5;
+      display: block;
+      padding-bottom: 2rem;
+      padding-top: 2rem; }
+      .main-menu li a:hover {
+        color: #1b1818;
+        background-color: #d4648c; }
+      @media screen and (max-height: 470px) {
+        .main-menu li a {
+          padding: 0; } }
+  @media screen and (max-width: 35em) {
+    .main-menu {
+      font-size: 3.5em; } }
+
+.about h1 {
+  color: #011e33;
+  margin: 0;
+  text-align: center; }
+
+.icon {
+  cursor: pointer;
+  fill: #01346b;
+  stroke: #809ab5;
+  stroke-width: 5px; }
+  .icon:hover {
+    fill: #d4648c;
+    stroke: #1b1818; }
+
+.menu-icon {
+  bottom: 0;
+  right: 100px;
+  position: fixed; }
+  .menu-icon svg {
+    height: 100px;
+    width: 100px; }
+  @media screen and (max-width: 40em) {
+    .menu-icon {
+      right: 25px; } }
+  @media screen and (max-width: 60em) {
+    .menu-icon {
+      right: 10px; } }
+
+.add-icon {
+  bottom: 90px;
+  right: 100px;
+  position: fixed; }
+  .add-icon svg {
+    height: 100px;
+    width: 100px; }
+  @media screen and (max-width: 40em) {
+    .add-icon {
+      right: 25px; } }
+  @media screen and (max-width: 60em) {
+    .add-icon {
+      right: 10px; } }
+
+.close-button {
+  height: 100px;
+  position: fixed;
+  right: 20px;
+  stroke: #809ab5;
+  stroke-width: 3px;
+  top: 20px;
+  transition: all 0.3s ease; }
+  .close-button svg {
+    height: 100px;
+    width: 100px; }
+  .close-button:hover {
+    stroke: #809ab5;
+    transform: rotate(90deg);
+    transform-origin: center; }
+
+.new-task {
+  -ms-flex-align: center;
+      align-items: center;
+  color: #1b1818;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .new-task div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 85%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .new-task input, .new-task textarea {
+    background-color: #809ab5;
+    border: none;
+    border-radius: 3px;
+    color: #1b1818;
+    font-size: 0.6em;
+    padding: 3%; }
+  .new-task input[type=radio] {
+    visibility: hidden; }
+  .new-task ::-webkit-input-placeholder {
+    color: #1d2a32;
+    opacity: 0.75; }
+  .new-task ::-moz-placeholder {
+    color: #1d2a32;
+    opacity: 0.75; }
+  .new-task :-ms-input-placeholder {
+    color: #1d2a32;
+    opacity: 0.75; }
+  .new-task ::placeholder {
+    color: #1d2a32;
+    opacity: 0.75; }
+  .new-task .radio-section {
+    background-color: #809ab5;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-positive: 0.2;
+        flex-grow: 0.2;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 50%;
+    margin: 0 auto; }
+    .new-task .radio-section label {
+      font-size: 0.5em;
+      text-align: center; }
+  .new-task .form-section {
+    -ms-flex-positive: 3;
+        flex-grow: 3; }
+  .new-task .new-task-preview {
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+  .new-task .submit-btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+
+.active {
+  background-color: #d4648c;
+  color: #1b1818; }
+
+.visible {
+  opacity: 1;
+  visibility: visible; }

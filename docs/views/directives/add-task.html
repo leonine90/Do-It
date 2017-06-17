@@ -1,0 +1,33 @@
+<section class="main-menu" ng-show='showAddTask'>
+  <div class="close-button icon" ng-click = 'showAddTask = !showAddTask'>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <line x1="0" y1="0" x2="100" y2="100"/>
+            <line x1="100" y1="0" x2="0" y2="100"/>
+          </g>
+    </svg>
+  </div>
+
+  <form class="new-task" ng-submit>
+    <div class="form-section">
+      <ul class="radio-section">
+        <li>
+          <label><input type="radio" name="taskCategory" value="1"/>Daily</label>
+        </li>
+        <li>
+          <label><input type="radio" name="taskCategory" value="2"/>Weekly</label>
+        </li>
+        <li>
+          <label><input type="radio" name="taskCategory" value="3"/>Monthly</label>
+        </li>
+      </ul>
+      <input type="text" placeholder="What you wanna do?"/>
+      <input type="text" placeholder="Category"/>
+      <input type="datetime" placeholder="Date"/>
+      <input class="submit-btn" type="submit"/>
+    </div>
+    <div class="new-task-preview">
+        <h1>Preview</h1>
+    </div>
+  </form>
+</section>
